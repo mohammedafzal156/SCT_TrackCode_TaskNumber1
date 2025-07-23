@@ -1,0 +1,145 @@
+*{
+    margin:3px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: "Arial",sans-serif;
+    width:device-width;
+}
+h1 {
+  text-align: start;
+  color:brown;
+  margin-left: 105px;
+  font-size: 40px;
+  margin-top:50px;
+  margin-bottom: 40px;;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: brown;
+  padding: 5px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:5px;
+    display:block;
+    text-align:center;
+    margin-bottom: none;
+}
+.navbar a:hover{
+    background-color: blue;
+}
+.navbar li{
+    float:left;
+    font-size: 27px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.nav-right{
+  text-align:end;
+  padding:2px;
+}
+.primary-btn{
+  background-color: brown;
+  color:white;
+  overflow:hidden;
+  border:none;
+  font-size:27px;
+}
+.logo img{
+  position: absolute;
+  margin-top: none;
+  margin-right: 20px;
+  margin-left: none;
+}
+.contact-box{
+    min-height: 100vh;
+    width:device-width;
+    background-color: #f0f0f0;
+    background-size: desktop;
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+}
+.container{
+    width:100%;
+    margin:50px,auto;
+    text-align: center;
+}
+.container h2{
+    font-size:40px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    color:white;
+    background: #007bff;
+}
+.contact-wrapper{
+    display:flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.contact-form{
+    text-align:left;
+}
+.contact-form h3{
+    font-size:25px;
+    margin-bottom:20px;
+    color:darkgreen;
+    margin-left:70px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+    width:100%;
+    padding:40px;
+    border-radius:8px;
+    border:none;
+    background-color: #f8f9fa;
+    color:#333;
+    margin-left: 70px;
+}
+input:focus, textarea:focus{
+    outline:none;
+    border:2px solid #007bff;
+}
+.secondary-btn{
+    display: inline-block;
+    padding:12px 24px;
+    background-color: #007bff;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    margin-left:70px;
+}
+button:hover{
+    background-color: #0056b3;
+    transform: scale(1.1);
+    margin-left:70px;
+}
+.contact-info{
+    text-align:left;
+}
+.contact-info h3{
+    font-size:28px;
+    margin-bottom:20px;
+    color:darkgreen;
+}
+.contact-info p{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#555;
+}
+@media screen and(max-width:768px) {
+    .container {
+        padding: 20px;
+    }
+    .contact-wrapper {
+        grid-template-columns: repeat(2,1fr); 
+     }    
+}
